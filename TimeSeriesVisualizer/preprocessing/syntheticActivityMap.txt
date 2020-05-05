@@ -1,0 +1,1 @@
+{"Dangerously Low Activity Index":1, "Very Low Activity Index":2, "Low Activity Index":3, "Somewhat Low Activity Index":4, "Normal Activity Index":5, "Somewhat High Activity Index":6, "High Activity Index":7, "Very High Activity Index":8, "Dangerously High Activity Index":9 }

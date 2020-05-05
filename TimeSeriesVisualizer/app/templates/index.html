@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time-Series Visualizer</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}"/>
+    <script type="text/javascript" src="{{ url_for('static', filename='data/labels.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='d3.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='main.js') }}"></script>
+</head>
+<body>
+    <h2>Time-Series Explorer</h2>
+
+    <div class="btnGroup" >
+        <button class="buttonOff" id="variabilityButton" onclick="variabilityAction()">Variability</button>
+        <button class="buttonOff" id="lengthButton" onclick="lengthAction()">Length</button>
+        <button class="buttonOff" id="uniqueButton" onclick="uniqueAction()">Unique</button>
+        <button class="buttonOff" id="encoderButton" onclick="encoderAction()">Encoder</button>
+        <button class="buttonOff" id="performanceButton" onclick="performanceAction()">Model Performance</button>
+    </div>
+    <div id="container"></div>
+    <div id="variabilityViewPanel" class="viewPanel"><h1>Variability</h1><br></div>
+    <div id="lengthViewPanel" class="viewPanel"><h1>Length</h1><br></div>
+    <div id="uniqueViewPanel" class="viewPanel"><h1>Unique</h1><br></div>
+    <div id="performanceViewPanel" class="viewPanel"><h1>Performance</h1><br></div>
+    <script src="{{ url_for('static', filename='buttons.js') }}"></script>
+</body>

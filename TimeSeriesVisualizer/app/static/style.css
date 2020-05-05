@@ -1,0 +1,228 @@
+body {
+    background-color:#FEE;;
+}
+
+.axis text {
+    font: 10px sans-serif;
+}
+.axis line, .axis path {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+.buttonGroup {
+  width: 500px;
+  margin: auto;
+  border: 3px solid #73AD21;
+}
+
+.viewPanel {
+    display: None;
+}
+
+td, th, tr {
+    padding: 4px;
+    border: 1px solid black;
+}
+table{
+    border-collapse: collapse;
+}
+.controls {
+    flex-basis: 10px;
+    background-color:#eee;
+}
+.controls .force p label { margin-right: .5em; font-size: 120%; font-weight: bold;}
+
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+#container {
+    /* top:60px;
+    left:700px;
+    width:960px;
+    height: 960px;
+	*/
+}
+
+#dataView {
+      position:absolute;
+      top:120px;
+      left:1000px;
+      width:60px;
+      height: 80px;
+  }
+#vis{
+     position:absolute;
+     top:30px;
+     left:300px;
+     width:1200px;
+     height: 960px;
+ }
+
+#vis2{
+    position:absolute;
+    top:30px;
+    left:300px;
+    width:1200px;
+    height: 960px;
+}
+#vis3{
+    position:absolute;
+    top:30px;
+    left:300px;
+    width:1200px;
+    height: 960px;
+}
+#vis4{
+    position:absolute;
+    top:30px;
+    left:300px;
+    width:1200px;
+    height: 960px;
+}
+
+
+#encoderTableDiv
+{
+    width:60%;
+    border:1px solid black;
+
+    /* Makes scrollable */
+    display: block;
+    overflow-x: scroll;
+    white-space: nowrap;
+
+    /* Change this to add more space between other objects*/
+    margin:	15px;
+}
+
+/* Scrollbar styling for the encoder widget (div) */
+#encoderTableDiv::-webkit-scrollbar {
+    width: 12px;
+}
+
+#encoderTableDiv::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    background-color: #EFF;
+}
+
+#encoderTableDiv::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+    background-color: #AFF;
+}
+​
+    /* Style the table overall*/
+#encoderTable {
+    border-collapse: collapse;
+}
+
+/* Add borders to table and its cells*/
+#encoderTable table, td, tr {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+#encoderTable td:nth-child(even) {
+    background-color: #9DF;
+}
+
+#encoderTable td:nth-child(odd) {
+    background-color: #ADF;
+}
+
+
+/* Styles the activation buttons when off/dormant*/
+.buttonOff {
+    -webkit-transition-duration: 0.4s;
+    background-color: #CCC;
+    border: 2px solid black;
+    padding: 5px;
+    transition-duration: 0.4s;
+    font-size: 16px;
+    text-align: center;
+    vertical-align: middle;
+    color: #000000;
+    cursor: pointer;
+    width: 194px;
+    height: 32px;
+}
+
+.buttonOff:hover {
+    border: 2px solid black;
+    color: #000000;
+    background-color: #FF0;
+}
+
+/*  Styles the activation buttons when on/active */
+.buttonOn {
+    -webkit-transition-duration: 0.4s;
+    background-color: #FF0;
+    border: 2px solid black;
+    padding: 5px;
+    transition-duration: 0.4s;
+    font-size: 16px;
+    text-align: center;
+    vertical-align: middle;
+    color: #000000;
+    cursor: pointer;
+    width: 194px;
+    height: 32px;
+}
+
+.buttonOn:hover {
+    border: 2px solid black;
+    color: #000000;
+    background-color: #CCC;
+}

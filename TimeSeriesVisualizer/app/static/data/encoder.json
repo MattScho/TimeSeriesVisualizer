@@ -1,0 +1,10 @@
+[
+{ "code": "1", "object": "Dangerously Low Activity Index"},
+{ "code": "2", "object": "Very Low Activity Index"},
+{ "code": "3", "object": "Low Activity Index"},
+{ "code": "4", "object": "Somewhat Low Activity Index"},
+{ "code": "5", "object": "Normal Activity Index"},
+{ "code": "6", "object": "Somewhat High Activity Index"},
+{ "code": "7", "object": "High Activity Index"},
+{ "code": "8", "object": "Very High Activity Index"},
+{ "code": "9", "object": "Dangerously High Activity Index"}]
